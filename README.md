@@ -1,8 +1,8 @@
 # ✨ Full Stack Realtime Chat App ✨
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
+live: https://chat-app-1-yt4n.onrender.com/login
 
-[Video Tutorial on Youtube](https://youtu.be/ntKkVrQqBYY)
+
 
 Highlights:
 
