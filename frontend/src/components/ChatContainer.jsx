@@ -86,8 +86,8 @@ const ChatContainer = () => {
                 />
               )}
               <div>
-  <p>{msg.text}</p>
-  <span>{formatDateTime(msg.createdAt)}</span>
+  <p>{message.text}</p>
+  <span>{formatDateTime(message.createdAt)}</span>
 </div>
             </div>
           </div>
