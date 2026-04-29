@@ -7,6 +7,12 @@ import MessageSkeleton from "./skeletons/MessageSkeleton";
 import { useAuthStore } from "../store/useAuthStore";
 import { formatMessageTime } from "../lib/utils";
 
+const formatTime = (date) => {
+  return new Date(date).toLocaleTimeString([], {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+};
 const ChatContainer = () => {
   const {
     messages,
@@ -79,7 +85,10 @@ const ChatContainer = () => {
                   className="sm:max-w-[200px] rounded-md mb-2"
                 />
               )}
-              {message.text && <p>{message.text}</p>}
+              <div>
+  <p>{msg.text}</p>
+  <span>{formatDateTime(msg.createdAt)}</span>
+</div>
             </div>
           </div>
         ))}
