@@ -12,6 +12,9 @@ const formatTime = (date) => {
     hour: "2-digit",
     minute: "2-digit",
   });
+}; 
+const formatDateTime = (date) => {
+  return new Date(date).toLocaleString();
 };
 const ChatContainer = () => {
   const {
